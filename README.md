@@ -53,9 +53,9 @@ Accuracy is defined as total number of correctly classified class over total num
  
 We have trained our model using EfficientNet-B2, EfficientNet-B3, EfficientNet-B4 and found out that the model trained on EfficientNet-B3 gave maximum accuracy of 87.66% on Binary Classification for identification of Diabetic Retinopathy whereas maximum accuracy for Multi- class classification was found when trained using EfficientNet-B2 which has an accuracy of 53.39%.
 
-![alt text](https://github.com/sameer7483/Diabetic-Retinopathy-Detection-using-Deep-Learning/edit/main/bi-classification.png)
+![alt text](https://github.com/sameer7483/Diabetic-Retinopathy-Detection-using-Deep-Learning/main/bi-classification.png)
 
-![alt text](https://github.com/sameer7483/Diabetic-Retinopathy-Detection-using-Deep-Learning/edit/main/class-classification.png)
+![alt text](https://github.com/sameer7483/Diabetic-Retinopathy-Detection-using-Deep-Learning/main/class-classification.png)
 
 ## Conclusions
 Diabetic Retinopathy is a fatal complication of diabetes and can lead to blindness. Early diagnosis of DR is important for an early treatment so as to prevent visual impairments. Consequently, an effective diagnostic method can help reduce the blindness caused due to DR. Therefore, We have worked on automating the diagnostic process using Convolutional Neural Network thus eliminating the time consuming manual-diagnostic method. We have obtained a high accuracy of 87.66% in identifying whether a fundus image have Diabetic Retinopathy or not which is quite significant and fast. In addition, we have obtained an accuracy of 53.39% in classifying the correct label to the fundus image. We believe that as a future work we can further improve the accuracy of these models by optimizing the hyperparameters.
