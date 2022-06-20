@@ -14,7 +14,15 @@ through a deep learning model based on convolutional neural networks which will 
 ## Datasets and Image Preprocessing
 
 ### Training Dataset
-We used publicly available 2015 Diabetic Retinopathy dataset from Kaggle competition which contains 35,127 fundus images for training our model. The images are classified into 5 classes where label 0 indicates No Diabetic Retinopathy, label 1 indicates Mild, label 2 indicates Moderate, label 3 indicate Severe and label 4 indicates Proliferative Diabetic Retinopathy.
+We used publicly available 2015 Diabetic Retinopathy dataset from Kaggle competition which contains 35,127 fundus images for training our model. The images are classified into 5 classes where label 0 indicates No Diabetic Retinopathy, label 1 indicates Mild, label 2 indicates Moderate, label 3 indicate Severe and label 4 indicates Proliferative Diabetic Retinopathy. There are varying number of images from each class and are in the below table:
+
+| Label | Level of DR | Count of Images |
+| --------------------- |:---:|:---:||
+| 0 | No DR | 25810 |
+| 1 | Mild | 5292 |
+| 2 | Moderate | 2443 |
+| 3 | Severe | 873 |
+| 4 | Proliferative DR | 708 |
 
 ## Methodology
 We have preprocessed the dataset to obtain uniform eye images and have used Convolutional Neural Network(CNN) model with EfficientNet architecture to train our model. Recently, CNNs have become highly popular for image classification tasks owing to their good performance and therefore we have utilized it for classification of Diabetic Retinopathy in different classes. Prior to
