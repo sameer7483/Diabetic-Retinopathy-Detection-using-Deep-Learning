@@ -17,7 +17,7 @@ through a deep learning model based on convolutional neural networks which will 
 We used publicly available 2015 Diabetic Retinopathy dataset from Kaggle competition which contains 35,127 fundus images for training our model. The images are classified into 5 classes where label 0 indicates No Diabetic Retinopathy, label 1 indicates Mild, label 2 indicates Moderate, label 3 indicate Severe and label 4 indicates Proliferative Diabetic Retinopathy. There are varying number of images from each class and are in the below table:
 
 | Label | Level of DR | Count of Images |
-| --------------------- |:---:|:---:||
+| --------------------- |:---:|:---:|
 | 0 | No DR | 25810 |
 | 1 | Mild | 5292 |
 | 2 | Moderate | 2443 |
