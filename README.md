@@ -24,6 +24,21 @@ We used publicly available 2015 Diabetic Retinopathy dataset from Kaggle competi
 | 3 | Severe | 873 |
 | 4 | Proliferative DR | 708 |
 
+![alt text](https://github.com/sameer7483/Diabetic-Retinopathy-Detection-using-Deep-Learning/edit/main/image_distribution.png)
+
+The training dataset contains images captured using cameras of different aspect ratios as a result some of eye images have higher black region which is not relevant for prediction. In addition to that, the shape of eye images are not uniform and are of varying shapes. Thus, we did Image processing to obtain a uniform dataset of eye images. We have also performed augmentation techniques to normalize the image using albumentations. The results are as below :
+
+![alt text](https://github.com/sameer7483/Diabetic-Retinopathy-Detection-using-Deep-Learning/edit/main/original_fundus.png)
+
+![alt text](https://github.com/sameer7483/Diabetic-Retinopathy-Detection-using-Deep-Learning/edit/main/transformed_fundus.png)
+
+Link to the training dataset : https://www.kaggle.com/competitions/diabetic-retinopathy- detection/data
+
+### Test Dataset
+We used publicly available 2019 Aptos Diabetic Retinopathy dataset from Kaggle competition which contains 3,663 fundus images for testing our model.
+Link to the test dataset : https://www.kaggle.com/competitions/aptos2019-blindness-detection/
+
+
 ## Methodology
 We have preprocessed the dataset to obtain uniform eye images and have used Convolutional Neural Network(CNN) model with EfficientNet architecture to train our model. Recently, CNNs have become highly popular for image classification tasks owing to their good performance and therefore we have utilized it for classification of Diabetic Retinopathy in different classes. Prior to
    
@@ -37,6 +52,10 @@ a. Model predicts whether the image has DR or No DR(Binary Classification) b. Mo
 Accuracy is defined as total number of correctly classified class over total number of images.
  
 We have trained our model using EfficientNet-B2, EfficientNet-B3, EfficientNet-B4 and found out that the model trained on EfficientNet-B3 gave maximum accuracy of 87.66% on Binary Classification for identification of Diabetic Retinopathy whereas maximum accuracy for Multi- class classification was found when trained using EfficientNet-B2 which has an accuracy of 53.39%.
+
+![alt text](https://github.com/sameer7483/Diabetic-Retinopathy-Detection-using-Deep-Learning/edit/main/bi-classification.png)
+
+![alt text](https://github.com/sameer7483/Diabetic-Retinopathy-Detection-using-Deep-Learning/edit/main/class-classification.png)
 
 ## Conclusions
 Diabetic Retinopathy is a fatal complication of diabetes and can lead to blindness. Early diagnosis of DR is important for an early treatment so as to prevent visual impairments. Consequently, an effective diagnostic method can help reduce the blindness caused due to DR. Therefore, We have worked on automating the diagnostic process using Convolutional Neural Network thus eliminating the time consuming manual-diagnostic method. We have obtained a high accuracy of 87.66% in identifying whether a fundus image have Diabetic Retinopathy or not which is quite significant and fast. In addition, we have obtained an accuracy of 53.39% in classifying the correct label to the fundus image. We believe that as a future work we can further improve the accuracy of these models by optimizing the hyperparameters.
