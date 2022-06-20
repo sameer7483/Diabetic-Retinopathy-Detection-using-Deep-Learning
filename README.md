@@ -32,7 +32,7 @@ The training dataset contains images captured using cameras of different aspect 
 
 ![alt text](https://github.com/sameer7483/Diabetic-Retinopathy-Detection-using-Deep-Learning/blob/main/transformed_fundus.png)
 
-Link to the training dataset : https://www.kaggle.com/competitions/diabetic-retinopathy- detection/data
+Link to the training dataset : https://www.kaggle.com/competitions/diabetic-retinopathy-detection/data
 
 ### Test Dataset
 We used publicly available 2019 Aptos Diabetic Retinopathy dataset from Kaggle competition which contains 3,663 fundus images for testing our model.
